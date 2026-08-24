@@ -1,0 +1,12 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+
+# Misc
+*.log
+.DS_Store

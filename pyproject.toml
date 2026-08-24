@@ -1,0 +1,21 @@
+[project]
+name = "arc-mcp"
+version = "1.0.0"
+description = "MCP server for Arc browser - manage spaces and tabs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Mikhail Chepkin" }]
+keywords = ["mcp", "arc", "browser", "spaces", "tabs"]
+dependencies = [
+    "mcp>=1.2.0",
+]
+
+[project.scripts]
+arc-mcp = "arc_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["arc_mcp"]
